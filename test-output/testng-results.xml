@@ -1,29 +1,65 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-10-05T00:16:58 CEST" name="Suite" finished-at="2023-10-05T00:17:06 CEST" duration-ms="8434">
+  <suite started-at="2023-10-05T00:24:58 CEST" name="Suite" finished-at="2023-10-05T00:25:16 CEST" duration-ms="18604">
     <groups>
     </groups>
-    <test started-at="2023-10-05T00:16:58 CEST" name="Test" finished-at="2023-10-05T00:17:06 CEST" duration-ms="8434">
+    <test started-at="2023-10-05T00:24:58 CEST" name="Test 1" finished-at="2023-10-05T00:25:06 CEST" duration-ms="8041">
       <class name="com.RealCarWala.Tests.VerifySearchingCars">
-        <test-method is-config="true" signature="launchApp()[pri:0, instance:com.RealCarWala.Tests.VerifySearchingCars@21fd5faa]" started-at="2023-10-05T00:16:58 CEST" name="launchApp" finished-at="2023-10-05T00:17:01 CEST" duration-ms="3382" status="PASS">
+        <test-method is-config="true" signature="launchApp()[pri:0, instance:com.RealCarWala.Tests.VerifySearchingCars@21fd5faa]" started-at="2023-10-05T00:24:58 CEST" name="launchApp" finished-at="2023-10-05T00:25:01 CEST" duration-ms="3242" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApp -->
-        <test-method is-config="true" signature="testSetUp()[pri:0, instance:com.RealCarWala.Tests.VerifySearchingCars@21fd5faa]" started-at="2023-10-05T00:17:01 CEST" name="testSetUp" finished-at="2023-10-05T00:17:01 CEST" duration-ms="11" status="PASS">
+        <test-method is-config="true" signature="testSetUp()[pri:0, instance:com.RealCarWala.Tests.VerifySearchingCars@21fd5faa]" started-at="2023-10-05T00:25:01 CEST" name="testSetUp" finished-at="2023-10-05T00:25:01 CEST" duration-ms="44" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSetUp -->
-        <test-method signature="searchUsedCars()[pri:0, instance:com.RealCarWala.Tests.VerifySearchingCars@21fd5faa]" started-at="2023-10-05T00:17:01 CEST" name="searchUsedCars" finished-at="2023-10-05T00:17:06 CEST" duration-ms="4897" status="PASS">
+        <test-method signature="searchUsedCars()[pri:0, instance:com.RealCarWala.Tests.VerifySearchingCars@21fd5faa]" started-at="2023-10-05T00:25:01 CEST" name="searchUsedCars" finished-at="2023-10-05T00:25:05 CEST" duration-ms="4615" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchUsedCars -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.RealCarWala.Tests.VerifySearchingCars@21fd5faa]" started-at="2023-10-05T00:17:06 CEST" name="tearDown" finished-at="2023-10-05T00:17:06 CEST" duration-ms="124" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.RealCarWala.Tests.VerifySearchingCars@21fd5faa]" started-at="2023-10-05T00:25:05 CEST" name="tearDown" finished-at="2023-10-05T00:25:06 CEST" duration-ms="120" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.RealCarWala.Tests.VerifySearchingCars -->
-    </test> <!-- Test -->
+    </test> <!-- Test 1 -->
+    <test started-at="2023-10-05T00:25:06 CEST" name="Test 2" finished-at="2023-10-05T00:25:16 CEST" duration-ms="10388">
+      <class name="com.RealCarWala.Tests.VerifyFindNewCars">
+        <test-method is-config="true" signature="launchApp()[pri:0, instance:com.RealCarWala.Tests.VerifyFindNewCars@517d4a0d]" started-at="2023-10-05T00:25:06 CEST" name="launchApp" finished-at="2023-10-05T00:25:08 CEST" duration-ms="2200" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApp -->
+        <test-method is-config="true" signature="testSetup()[pri:0, instance:com.RealCarWala.Tests.VerifyFindNewCars@517d4a0d]" started-at="2023-10-05T00:25:08 CEST" name="testSetup" finished-at="2023-10-05T00:25:08 CEST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSetup -->
+        <test-method signature="openMahindraPage()[pri:0, instance:com.RealCarWala.Tests.VerifyFindNewCars@517d4a0d]" started-at="2023-10-05T00:25:08 CEST" name="openMahindraPage" finished-at="2023-10-05T00:25:11 CEST" duration-ms="3150" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openMahindraPage -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.RealCarWala.Tests.VerifyFindNewCars@517d4a0d]" started-at="2023-10-05T00:25:11 CEST" name="tearDown" finished-at="2023-10-05T00:25:11 CEST" duration-ms="149" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchApp()[pri:0, instance:com.RealCarWala.Tests.VerifyFindNewCars@517d4a0d]" started-at="2023-10-05T00:25:11 CEST" name="launchApp" finished-at="2023-10-05T00:25:13 CEST" duration-ms="2001" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApp -->
+        <test-method is-config="true" signature="testSetup()[pri:0, instance:com.RealCarWala.Tests.VerifyFindNewCars@517d4a0d]" started-at="2023-10-05T00:25:13 CEST" name="testSetup" finished-at="2023-10-05T00:25:13 CEST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSetup -->
+        <test-method signature="openPage()[pri:0, instance:com.RealCarWala.Tests.VerifyFindNewCars@517d4a0d]" started-at="2023-10-05T00:25:13 CEST" name="openPage" finished-at="2023-10-05T00:25:16 CEST" duration-ms="2735" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openPage -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.RealCarWala.Tests.VerifyFindNewCars@517d4a0d]" started-at="2023-10-05T00:25:16 CEST" name="tearDown" finished-at="2023-10-05T00:25:16 CEST" duration-ms="143" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.RealCarWala.Tests.VerifyFindNewCars -->
+    </test> <!-- Test 2 -->
   </suite> <!-- Suite -->
 </testng-results>

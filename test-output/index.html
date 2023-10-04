@@ -55,7 +55,7 @@
                 </li>
                 <li>
                   <a href="#" panel-name="testlist-Suite" class="navigator-link ">
-                    <span class="test-stats">1 test</span>
+                    <span class="test-stats">2 tests</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">3 methods,   3 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -101,6 +101,16 @@
                       <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
                     </span>
                     <div class="method-list-content passed suite-Suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.RealCarWala.Tests.VerifyFindNewCars" class="method navigator-link" hash-for-method="openMahindraPage">openMahindraPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.RealCarWala.Tests.VerifyFindNewCars" class="method navigator-link" hash-for-method="openPage">openPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="com.RealCarWala.Tests.VerifySearchingCars" class="method navigator-link" hash-for-method="searchUsedCars">searchUsedCars</a> <!-- method navigator-link -->
@@ -118,6 +128,28 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.RealCarWala.Tests.VerifyFindNewCars</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="openMahindraPage">
+                  </a> <!-- openMahindraPage -->
+                  <span class="method-name">openMahindraPage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="openPage">
+                  </a> <!-- openPage -->
+                  <span class="method-name">openPage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -146,11 +178,16 @@
   &lt;listeners&gt;
     &lt;listener class-name=&quot;com.RealCarWala.TestComponents.Listeners&quot;/&gt;
   &lt;/listeners&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Test 1&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;com.RealCarWala.Tests.VerifySearchingCars&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Test --&gt;
+  &lt;/test&gt; &lt;!-- Test 1 --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Test 2&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.RealCarWala.Tests.VerifyFindNewCars&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Test 2 --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -162,7 +199,10 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Test (1 class)</span>
+                <span class="test-name">Test 1 (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Test 2 (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -188,16 +228,24 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(3);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'searchUsedCars')
 data.setCell(0, 2, 'com.RealCarWala.Tests.VerifySearchingCars')
-data.setCell(0, 3, 4897);
+data.setCell(0, 3, 4615);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'openMahindraPage')
+data.setCell(1, 2, 'com.RealCarWala.Tests.VerifyFindNewCars')
+data.setCell(1, 3, 3150);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'openPage')
+data.setCell(2, 2, 'com.RealCarWala.Tests.VerifyFindNewCars')
+data.setCell(2, 3, 2735);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 4 seconds</span>
+              <span class="suite-total-time">Total running time: 10 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -230,15 +278,50 @@ return data;
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">testSetUp</span>
-                <span class="method-start">3383 ms</span>
+                <span class="method-start">3244 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">searchUsedCars</span>
-                <span class="method-start">3395 ms</span>
+                <span class="method-start">3289 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">8297 ms</span>
+                <span class="method-start">7908 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.RealCarWala.Tests.VerifyFindNewCars</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">launchApp</span>
+                <span class="method-start">8205 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">testSetup</span>
+                <span class="method-start">10405 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">openMahindraPage</span>
+                <span class="method-start">10406 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">13558 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">launchApp</span>
+                <span class="method-start">13708 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">testSetup</span>
+                <span class="method-start">15709 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">openPage</span>
+                <span class="method-start">15710 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">18449 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
