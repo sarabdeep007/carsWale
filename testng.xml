@@ -4,10 +4,18 @@
 	<listeners>
 		<listener class-name="com.RealCarWala.TestComponents.Listeners"></listener>
 	</listeners>
-  <test name="Test">
+  <test name="Test 1">
     <classes>
      
       <class name="com.RealCarWala.Tests.VerifySearchingCars"/>
+      
+    </classes>
+  </test> <!-- Test -->
+  
+  <test name="Test 2">
+    <classes>
+     
+      <class name="com.RealCarWala.Tests.VerifyFindNewCars"/>
       
     </classes>
   </test> <!-- Test -->
