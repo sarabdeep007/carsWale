@@ -40,7 +40,7 @@ public class Listeners extends BaseTest implements ITestListener {
 		
 		extentTest.get().fail(result.getThrowable());
 		
-		String screenShotpath = null;
+		
 		try {
 			driver = (WebDriver) result.getTestClass().getRealClass().getField("driver").get(result.getInstance());
 		} catch (IllegalArgumentException e) {
@@ -57,7 +57,7 @@ public class Listeners extends BaseTest implements ITestListener {
 			e.printStackTrace();
 		}
 		
-	
+		String screenShotpath = null;
 		
 		try {
 			screenShotpath = getScreenshot(result.getMethod().getMethodName(), driver);
@@ -97,7 +97,7 @@ public class Listeners extends BaseTest implements ITestListener {
 
 	public void onFinish(ITestContext context) {
 		// TODO Auto-generated method stub
-		
+		extent.flush();
 	}
 
 }
