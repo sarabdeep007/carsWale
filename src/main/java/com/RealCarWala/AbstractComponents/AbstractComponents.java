@@ -38,10 +38,7 @@ public class AbstractComponents {
 	
 	@FindAll({@FindBy(xpath="//input[@placeholder='Type your city']"), 
 		@FindBy(xpath="//input[@placeholder='Type your Pincode or City']")})
-	
-	
 	WebElement locationSetup;
-	
 	
 	
 	@FindBy(xpath="(//div[@role='presentation']/div/div)[1]")
@@ -49,6 +46,9 @@ public class AbstractComponents {
 	
 	@FindBy(css="#ui-id-2 li")
 	List<WebElement> locationSelectionResults;
+	
+	@FindBy(xpath="//div[@class='o-bWHzMb o-ducbvd o-cglRxs YONMcZ o-fpkJwH o-dCyDMp ']//h1")
+	WebElement pagesTitle;
 	
 	
 	
@@ -99,6 +99,11 @@ public class AbstractComponents {
 		
 		//waitElementsListIsVisible(locationSelectionResults);
 		locationSelectionResults.get(0).click();
+	}
+	
+	public String pageTitle()
+	{
+		return pagesTitle.getText();
 	}
 	
 	

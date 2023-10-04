@@ -1,21 +1,24 @@
 package com.RealCarWala.PageObjects;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 
 import com.RealCarWala.AbstractComponents.AbstractComponents;
 
 public class HomePage extends AbstractComponents {
 	
 	WebDriver driver;
+	Actions action;
 	
 	public HomePage(WebDriver driver)
 	{
 		super(driver);
 		this.driver = driver;
-		//PageFactory.initElements(driver, this);
+		action = new Actions(driver);
+		PageFactory.initElements(driver, this);
 	}
 	
 	//Elements
@@ -38,6 +41,9 @@ public class HomePage extends AbstractComponents {
 	@FindBy(xpath="//button[normalize-space()='Search']")
 	private WebElement homePageSearchButton;
 	
+	@FindBy(xpath="//div[contains(text(),'Find New Cars')]")
+	private WebElement findNewCardsButton;
+	
 	
 	
 	//methods
@@ -59,6 +65,17 @@ public class HomePage extends AbstractComponents {
 		return new UsedCarsCitiyWise(driver);
 		
 		
+	}
+	
+	
+	
+	
+	public NewCarsPage findNewCars()
+	{
+		action.moveToElement(topNavNewCarsButton()).build().perform();
+		waitElementIsVisible(findNewCardsButton);
+		findNewCardsButton.click();
+		return new NewCarsPage(driver);
 	}
 
 }
